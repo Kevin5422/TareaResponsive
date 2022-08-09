@@ -1,70 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 
-*{margin: 0; padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    }
-
-header img{width: 80px;display: flex ;}
+header img {
+  width: 80px;
+  display: flex;
+}
 
 header {
-    display: flex;
-    background: linear-gradient(rgb(238, 150, 201), rgb(250, 228, 128));
-    flex-direction: row;
-    align-content: stretch;
-    justify-content: space-between;
-    ;
+  display: flex;
+  background: linear-gradient(rgb(238, 150, 201), rgb(250, 228, 128));
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
+  ;
 }
-body{background-color: bisque;}
+
+body {
+  background: linear-gradient(rgb(150, 213, 238), rgb(221, 128, 250));
+}
+
 footer {
   background-color: beige;
   text-align: center;
 }
 
-ul {display: flex;
-margin-top: 45px;
-margin-right: 250px;
-cursor: pointer;}
-ul li:hover {background-color: aqua;}
+ul {
+  display: flex;
+  margin-top: 45px;
+  margin-right: 250px;
+  cursor: pointer;
+}
 
-li a {margin: 25px 10px;
-text-transform: uppercase;
-color: rgb(7, 0, 0);}
+ul li:hover {
+  background-color: aqua;
+}
+
+li a {
+  margin: 25px 10px;
+  text-transform: uppercase;
+  color: rgb(7, 0, 0);
+}
 
 #pelucherat {
   background: linear-gradient(rgb(150, 206, 238), rgb(250, 128, 250));
   display: flex;
-  display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
   align-items: center;
-
-}
-#pelucherat {
-  display: flex;
-  flex-direction: row;
-
 }
 
 #pelucherat img {
-  margin-left: 215px;
-  height: 320px;
+  height: 15rem;
   border-radius: 35%;
 }
-#pelucherat button {width: 5rem;}
+
+#pelucherat button {
+  width: 5rem;
+  margin-left: 5rem;
+}
+
+#pelucherat {
+  margin-bottom: 5rem;
+}
+
+.ran {
+  margin-bottom: 5rem;
+  display: flex;
+  gap: 1rem;
+}
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
   border-radius: 5px;
 
 }
-.card h4{text-align: center;}
+.card img {animation-name: cards;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+alternate}
+
+@keyframes cards {from {transform: translateY(-50px)} to {translateY(0)};}
+
+.card h4 {
+  text-align: center;
+}
 
 .card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -76,28 +113,53 @@ img {
   padding: 2px 16px;
 }
 
-#ran {display: flex;
-  gap: 3rem;}
-  div form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#ran {
+  display: flex;
+  gap: 3rem;
 }
 
-.enviar {margin-top: 2rem; cursor: pointer;}
-.enviar:hover {background-color: salmon;}
+div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-#Nom:focus {background-color: salmon;}
-#Ape:focus {background-color: salmon;}
-#Corr:focus {background-color: salmon;}
-#Text:focus {background-color: salmon;}
+.enviar {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background-color: salmon;
+}
+
+#Nom:focus {
+  background-color: salmon;
+}
+
+#Ape:focus {
+  background-color: salmon;
+}
+
+#Corr:focus {
+  background-color: salmon;
+}
+
+#Text:focus {
+  background-color: salmon;
+}
 
 
-#check {display:none}
-.checkbtn {display: none;}
+#check {
+  display: none
+}
 
-@media (max-width:700px){
-nav ul {
+.checkbtn {
+  display: none;
+}
+
+@media (max-width:700px) {
+  nav ul {
     position: fixed;
     width: 100%;
     height: 350px;
@@ -109,16 +171,22 @@ nav ul {
     transition: all .5s;
   }
 
-#ratonn {margin: 55px 0;}
+  #ratonn {
+    margin: 55px 0;
+  }
 
-  li a{background-color: rgb(123, 255, 0);}
+  li a {
+    background-color: rgb(123, 255, 0);
+  }
 
 
 
-  .checkbtn {display: block;
+  .checkbtn {
+    display: block;
 
-    }
-  #check:checked ~ ul {
+  }
+
+  #check:checked~ul {
     left: 0;
     display: block;
     ;
