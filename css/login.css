@@ -1,4 +1,4 @@
-/* efectos por defecto */
+
 body {
     font-family: 'Overpass', sans-serif;
     font-weight: normal;
@@ -9,7 +9,6 @@ body {
     background-color: #5f6769;
 }
 
-/* efectos para el contenedor de pantalla completa */
 #contenedor {
     display: flex;
     align-items: center;
@@ -22,12 +21,11 @@ body {
     width: 100%;
     height: 100%;
     
-    background-image: url(../imagenes/fondo_difuminado_login.jpg);
+    background-image: url(../pelucherat.jpg);
     background-position: center;
     background-size: cover;
 }
 
-/* contenedor del login a la izquierda */
 #contenedorcentrado {
     display: flex;
     align-items: center;
@@ -40,8 +38,6 @@ body {
     
     background-color: #5f6769;
     
-    /*opacity: 0.50;
-    filter: alpha(opacity=50);*/
     
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -55,8 +51,6 @@ body {
     box-sizing: border-box;
 }
 
-/* formulario de login */
-/* formulario de login */
 #login {
     width: 100%;
     max-width: 320px;
@@ -133,16 +127,9 @@ body {
     background-color: #3c4245;
     color:#dfcdc3;
 }
-/* formulario de login */
-/* formulario de login */
 
-/* seccion de la derecha */
-/* seccion de la derecha */
-/* por defecto */
 #derecho {
-    /*display: flex;
-    align-items:center;
-    justify-content:center;*/
+    
     
     text-align: center;
     width: 100%;
@@ -184,11 +171,7 @@ hr {
 .pie-form a:hover {
     color: #719192;
 }
-/* seccion de la derecha */
-/* seccion de la derecha */
 
-/* ajustar a pantallas con ancho menor o igual a 775px; */
-/* ajustar a pantallas con ancho menor o igual a 775px; */
 @media all and (max-width: 775px)
 {
     #contenedorcentrado {
@@ -199,9 +182,6 @@ hr {
         width: 90%;
 
         background-color: #5f6769;
-
-        /*opacity: 0.50;
-        filter: alpha(opacity=50);*/
 
         border-radius: 10px 10px 10px 10px;
         -moz-border-radius: 10px 10px 10px 10px;
@@ -227,5 +207,3 @@ hr {
         text-align: left;
     }
 }
-/* ajustar a pantallas con ancho menor o igual a 775px; */
-/* ajustar a pantallas con ancho menor o igual a 775px; */

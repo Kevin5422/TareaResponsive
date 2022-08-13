@@ -9,6 +9,8 @@
 header img {
   width: 80px;
   display: flex;
+  margin-left: 2rem;
+  border-radius: 10rem;
 }
 
 header {
@@ -60,13 +62,14 @@ li a {
 
 #pelucherat button {
   width: 5rem;
-  margin-left: 5rem;
+  align-items: center;
+  cursor: pointer;
 }
 
 #pelucherat {
   margin-bottom: 5rem;
 }
-
+#pelucherat h1 {text-align: center;}
 .ran {
   margin-bottom: 5rem;
   display: flex;
@@ -176,7 +179,9 @@ div form {
   }
 
   li a {
-    background-color: rgb(123, 255, 0);
+    background-color: rgba(0, 255, 34, 0.897);
+    margin: 1rem;
+    
   }
 
 
@@ -189,6 +194,9 @@ div form {
   #check:checked~ul {
     left: 0;
     display: block;
-    ;
+    position:absolute;
+    height: 15rem;
+    top: 0;
+    
   }
 }
