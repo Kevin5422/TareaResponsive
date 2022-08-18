@@ -15,15 +15,17 @@ header img {
 
 header {
   display: flex;
-  background: linear-gradient(rgb(238, 150, 201), rgb(250, 228, 128));
+  /*background: linear-gradient(rgb(238, 150, 201), rgb(250, 228, 128));*/
+  background-color: black;
   flex-direction: row;
   align-content: stretch;
-  justify-content: space-between;
-  ;
-}
+  justify-content: space-between;}
+
+ header li a {color: aliceblue;}
 
 body {
-  background: linear-gradient(rgb(150, 213, 238), rgb(221, 128, 250));
+  /*background: linear-gradient(rgb(150, 213, 238), rgb(221, 128, 250));*/
+  background-color: black;
 }
 
 footer {
@@ -39,7 +41,7 @@ ul {
 }
 
 ul li:hover {
-  background-color: aqua;
+  background-color: rgb(255, 0, 76);
 }
 
 li a {
@@ -77,25 +79,26 @@ li a {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(34, 10, 10, 0.849);
   transition: 0.3s;
   width: 40%;
   border-radius: 5px;
 
 }
-.card img {animation-name: cards;
+/*.card img {animation-name: cards;
 animation-duration: 3s;
 animation-iteration-count: infinite;
 alternate}
 
-@keyframes cards {from {transform: translateY(-50px)} to {translateY(0)};}
+@keyframes cards {from {transform: translateY(-50px)} to {translateY(0)};}*/
 
 .card h4 {
   text-align: center;
+  color: aliceblue;
 }
 
 .card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 32px 0 rgba(226, 5, 5, 0.103);
   cursor: pointer;
 }
 
@@ -104,8 +107,9 @@ alternate}
 }
 
 .card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 32px 0 rgba(199, 63, 63, 0.507);
   cursor: pointer;
+  width: 40rem;
 }
 
 img {
@@ -125,6 +129,7 @@ div form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: aliceblue;
 }
 
 .enviar {
@@ -179,7 +184,7 @@ div form {
   }
 
   li a {
-    background-color: rgba(0, 255, 34, 0.897);
+    background-color: rgba(255, 0, 64, 0.651);
     margin: 1rem;
     
   }
@@ -188,6 +193,7 @@ div form {
 
   .checkbtn {
     display: block;
+    color: aliceblue;
 
   }
 
@@ -197,6 +203,7 @@ div form {
     position:absolute;
     height: 15rem;
     top: 0;
+    
     
   }
 }
